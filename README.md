@@ -13,11 +13,13 @@ SPI master SPI1 : PC0(SS)/PC1(CLK)/PC2(MOSI)/PC3(MISO)
 
 3. SPI master TX comamand : head(0x5A) + length + data[0]~data[n] + checksum + tail(0xA5)
 
-4. press terminal digit 1 to send SPI TX data 
+4. SPI slave RX , by checking SS line interrupt , to get SPI Slave PDMA RX data and length
+
+5. press terminal digit 1 to send SPI TX data 
 
 ![image](https://github.com/released/M480BSP_SPI_Slave_Rx_PDMA_unknownlength/blob/main/log.jpg)
 
-5. below is LA SPI , MOSI capture
+6. below is LA SPI , MOSI capture
 
 ![image](https://github.com/released/M480BSP_SPI_Slave_Rx_PDMA_unknownlength/blob/main/SPI_MOSI_random_length.jpg)
 
